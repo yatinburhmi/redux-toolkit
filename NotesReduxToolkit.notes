@@ -1,0 +1,27 @@
+# REDUX:
+
+1. it is for JS Applications.
+2. it is not tied to react. It can be used with Angular 
+3. Redux is a state container. 
+
+# State -  state that is shared by all the individual components of the app.  
+
+4. Redux is a predictable state container of JS apps.
+# Tools and patterns provided by redux makes it easier to understand when, where, why and how state of the application is being updated
+# and how the application will behave when those changes occur. 
+
+What is Redux Toolkit? :
+Official toolset for redux development. It is absraction over redux. 
+
+React-Redux is the official UI binding library of react. 
+
+# When to use Redux in React Application?
+It is useful when:
+    1.  there is large amout of application state. 
+    2.  app state is changed frequently over time
+    3.  logic to update that state may be complex.  
+
+!! Three Code concepts of REDUX:
+    # 1. [ Store ]: It holds the state of your application. 
+    # 2. [ Action ]: It tells us what happened in the application.
+    # 3. [ Reducer ]: It handles the Action and describes how to update the state.
