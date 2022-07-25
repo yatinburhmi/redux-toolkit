@@ -24,4 +24,22 @@ It is useful when:
 !! Three Code concepts of REDUX:
     # 1. [ Store ]: It holds the state of your application. 
     # 2. [ Action ]: It tells us what happened in the application.
-    # 3. [ Reducer ]: It handles the Action and describes how to update the state.
+    # 3. [ Reducer ]: It handles the Action and describes how to update the state. 
+
+!! Three Principles of Redux:
+
+    #1. The global state of your application is stored as an object inside a single store. 
+    #2. The only way to change the state is to dispatch an action, an object which tells/describes what happened.
+         --> to update the state, you have to let redux know about that with an action. 
+        --> you cannot update the state directly.
+    #3. To specify how to update the state tree with an action, write pure reducers. 
+        --> pure reducers are functions that take in previousState and action as parameters and return the new state.
+
+# Action:
+1. The only way your application can interact with the store. 
+2. The application can send some info through action in the store. 
+3. These are PLAIN JS OBJECTS. 
+4. It must specify a 'type' property to describes something happened in the application.
+5. The 'type' property is generally defined as a string constant
+
+//action creator - a function that returns the object. 
