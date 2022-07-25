@@ -43,3 +43,7 @@ It is useful when:
 5. The 'type' property is generally defined as a string constant
 
 //action creator - a function that returns the object. 
+
+# Store:
+1. Holds application state
+2. allows access to state via getState() 
