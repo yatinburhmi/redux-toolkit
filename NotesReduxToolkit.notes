@@ -1,7 +1,8 @@
-# REDUX:
+
+# BASICS OF REDUX:
 
 1. it is for JS Applications.
-2. it is not tied to react. It can be used with Angular 
+2. it is not tied to react. It can be used with Angular, VueJs
 3. Redux is a state container. 
 
 # State -  state that is shared by all the individual components of the app.  
@@ -42,8 +43,20 @@ It is useful when:
 4. It must specify a 'type' property to describes something happened in the application.
 5. The 'type' property is generally defined as a string constant
 
-//action creator - a function that returns the object. 
+
+#Reducer:
+1. Sepcify how the application's state changes in response to actions sent to the store.
+2. is a function that accepts state and action as arguments, and returns the next state of the application.
+(previousState, action) => newState
+
 
 # Store:
 1. Holds application state
 2. allows access to state via getState() 
+
+#HOW EVERYTHING WORKS:
+Step 1. Define an action type //(type is generally a string constant).
+Step 2. Create an action creator. We send the payload in action creator function as argument. //action creator - a function that returns the object. 
+Step 3. We create a reducer which takes previousState and action as parameters. State is changed inside this function
+ after conditons are checked on the action.
+Step 4. While changing the state, remember to use the spread operator so that all the other contents of state are also returned. Reducer function returns a new state. 
